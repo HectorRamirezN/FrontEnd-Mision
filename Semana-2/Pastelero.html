@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles doña chuy - Admin</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png">
+    <style>
+        * {box-sizing: border-box;}
+        
+        body { 
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #93E6E1;
+        }
+
+        h1, h2, h3{
+          color:#E69399;
+        }
+        
+        .header {
+          overflow: hidden;
+          background-color: #B793E6;
+          padding: 20px 10px;
+        }
+
+        table {
+          border:none;
+          border-collapse: collapse;
+        }
+
+        #pedidos {
+          width: 60%
+        }
+
+        #pedidos tr:hover {background-color: #C2E693;}
+
+        #almacen tr:hover {background-color: #C2E693;}
+
+        #pedidos td, #pedidos th{
+          border: 1px solid rgb(66, 5, 53);
+          padding: 8px;
+        }
+        
+        th {
+          background-color: #B793E6;
+          color: white;
+          height:60px;
+          border:none;
+        }
+        tr  {
+          height: 50px;
+          border:none;
+        }
+        tr:nth-child(odd) {
+          background-color: rgb(255, 238, 245);
+          color: #cc7076;
+        }
+          tr:nth-child(even) {
+          background-color: white;
+          color: #cc7076;
+        }
+        
+        .header a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        .header a:hover {
+          background-color: #C2E693;
+          color: black;
+        }
+        
+        .header a.active {
+          background-color: #E69399;
+          color: white;
+        }
+        
+        .header-right {
+          float: right;
+        }
+        
+        @media screen and (max-width: 500px) {
+          .header a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .header-right {
+            float: none;
+          }
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo-head.png" width="150" height="65">
+        <div class="header-right">
+          <a href="Index.html">Home</a>
+          <a class="active" href="#home">Admin</a>
+        </div>
+    </div>
+    <br><br>
+    <h1>Panel del pastelero</h1>
+    <br><br>
+    <h2>Pedidos</h2>
+    <table id="pedidos">
+      <tr>
+        <th>Fecha de entrega</th>
+        <th>Nombre</th>
+        <th>Telefono</th>
+        <th>Direccion</th>
+        <th>Pastel</th>
+        <th>adornos</th>
+        <th>Comentarios</th>
+        <th>Total pagado</th>
+      </tr>
+      <tr>
+        <td>20/03/2022</td>
+        <td>julian Rodriguez</td>
+        <td>5555555555</td>
+        <td>Rosio casuela #45 el burrion</td>
+        <td>Chocholate Grande</td>
+        <td>Fondan, Cerezas, Mensaje</td>
+        <td>Feliz cumpleaños 32</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td>20/03/2022</td>
+        <td>Erika Ramirez</td>
+        <td>2222222222</td>
+        <td>Gustavo Diaz ordaz #400 los angeles</td>
+        <td>Tres Leches Chico</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>$200</td>
+      </tr>
+      <tr>
+        <td>22/03/2022</td>
+        <td>Amparo Lopez</td>
+        <td>111111111</td>
+        <td>emeralda #123 diez de mayo</td>
+        <td>Chocolate con Vainilla Chico</td>
+        <td>Feliz cumpleaños con velas</td>
+        <td>NA</td>
+        <td>$190</td>
+      </tr>
+      <tr>
+        <td>23/03/2022</td>
+        <td>Irma Garza</td>
+        <td>333333333</td>
+        <td>lopez portillo #56 fogoris</td>
+        <td>Fresa Grande</td>
+        <td>Fondan, Dibujo personalizado, mensaje</td>
+        <td>mi niño quiere un pastel con forma de minion que diga feliz cumpleaño Ian</td>
+        <td>$600</td>
+      </tr>
+      <tr>
+        <td>24/03/2022</td>
+        <td>Luis Camacho</td>
+        <td>1231231231</td>
+        <td>Miguel Hidalgo #23 emiliano zapata </td>
+        <td>Oreo</td>
+        <td>NA</td>
+        <td>NA</td>
+        <td>$150</td>
+      </tr>
+    </table>
+    <h2>Ingredientes y Arreglos en Almacén</h2>
+    <table id="almacen">
+      <tr>
+        <th>Ingrediente</th>
+        <th>Cantidad disponible</th>
+      </tr>
+      <tr>
+        <td>Harina</td>
+        <td>100kg</td>
+      </tr>
+      <tr>
+        <td>Huevos</td>
+        <td>20 docenas</td>
+      </tr>
+      <tr>
+        <td>Leche</td>
+        <td>50 litros</td>
+      </tr>
+      <tr>
+        <td>Azucar</td>
+        <td>100kg</td>
+      </tr>
+      <tr>
+        <td>Esencia de Vainilla</td>
+        <td>20 litros</td>
+      </tr>
+      <tr>
+        <td>Chocolate para fundir</td>
+        <td>50kg</td>
+      </tr>
+      <tr>
+        <td>Fondan</td>
+        <td>100kg</td>
+      </tr>
+      <tr>
+        <td>Arreglo de Feliz Cumpleaños</td>
+        <td>30 piezas</td>
+      </tr>
+      <tr>
+        <td>Cerezas</td>
+        <td>10kg</td>
+      </tr>
+      <tr>
+        <td>Velas</td>
+        <td>200 piezas</td>
+      </tr>
+      <tr>
+        <td>Etc</td>
+        <td>1000 toneladas</td>
+      </tr>
+    </table>
+
+</body>
