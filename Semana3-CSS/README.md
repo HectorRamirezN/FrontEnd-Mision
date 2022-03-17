@@ -1,4 +1,4 @@
-#Kata 3 Front mision CSS
+# Kata 3 Front mision CSS
 
 ## -Planeacion de campaña de Marketing
 ![campaña-marketing](Campaña.png)
