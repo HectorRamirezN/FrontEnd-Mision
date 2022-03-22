@@ -27,13 +27,15 @@ body {
   border-radius: 2vmin;
 }
 .pokedex-search input[type="text"] {
-  margin-top: 1vmin;
+  margin-top: 2vmin;
   width: 30vmin;
-  height: 10vmin;
+  height: 9vmin;
   background-color: #55ab62;
   font-size: 6vmin;
   border-radius: 1vmin;
   border: 0;
+  font-family: "Bakbak One", cursive;
+  text-align: center;
 }
 .pokedex-search {
   display: flex;
@@ -59,9 +61,10 @@ body {
   border-bottom: 12px solid var(--poke-darkred);
 }
 .page-bottom {
+  display: flex;
+  justify-content: space-between;
   color: white;
-  justify-self: end;
-  margin: 2vmin 2vmin 2vmin 0;
+  margin: 2vmin 4vmin 2vmin 4vmin;
   font-size: 2vmin;
 }
 .big-light {
@@ -232,10 +235,10 @@ body {
   column-gap: 4vmin;
   row-gap: 1vmin;
   margin-top: 5vmin;
+  margin-left: 2vmin;
 }
 .pokedex-moves li {
   font-size: 2.8vmin;
   text-decoration: none;
   list-style: none;
-  background-color: ;
 }
