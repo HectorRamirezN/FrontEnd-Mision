@@ -51,7 +51,7 @@ body {
   --poke-darkred: #870e21;
   display: grid;
   width: 100vw;
-  max-height: 1200px;
+  max-height: 1500px;
   max-width: 850px;
   background-color: var(--poke-red);
   border-radius: 40px 15px 15px 40px;
