@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex JS</title>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <header></header>
+  <body>
+    <!--pokedex-->
+    <div class="pokedex">
+      <div class="pokedex-top">
+        <div class="big-light"></div>
+        <img class="logo" src="img/pokedex.png" />
+        <div class="pokedex-search">
+          <input type="text" id="pokeId" name="pokeId" placeholder="Pokemon" />
+          <button onclick="fetchPokemon()">Search</button>
+        </div>
+      </div>
+      <div class="main-display">
+        <div class="main-display-frame">
+          <div class="main-display-frame-inner">
+            <div class="pokemon-picture">
+              <img id="pokeImg" src="img/pokelogo.png" />
+              <div class="pokemon-id-name">
+                <span id="pokeName">Find Your Favorite Pokemon</span>
+              </div>
+            </div>
+            <div class="pokemon-types">
+              <div id="pokeTypes"></div>
+              <div class="pokemon-height"><span id="pokeHeight"></span></div>
+              <div class="pokemon-weight"><span id="pokeWeight"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pokedex-stats">
+        <h2>Pokemon Stats</h2>
+        <div class="stat-bars">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+          <div id="bar4" class="bar"></div>
+          <div id="bar5" class="bar"></div>
+          <div id="bar6" class="bar"></div>
+          <span>HP</span>
+          <span>ATK</span>
+          <span>DEF</span>
+          <span>SP.ATK</span>
+          <span>SP.DEF</span>
+          <span>SPEED</span>
+        </div>
+      </div>
+      <div class="pokedex-moves">
+        <h2>Pokemon Moves</h2>
+        <ul id="pokeMoves" class="pokemon-moves"></ul>
+      </div>
+      <div class="page-bottom">
+        <p>Hecha por Hector Ramirez para LaunchX @2022</p>
+        <a href="https://github.com/HectorRamirezN" target="_blank"
+          ><i class="fa-brands fa-github"></i>GitHub</a
+        >
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="js/pokedex.js"></script>
+  </footer>
+</html>
